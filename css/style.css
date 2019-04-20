@@ -1,0 +1,155 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.4rem;
+}
+
+main {
+    /* background-image: url("https://images.unsplash.com/photo-1450849608880-6f787542c88a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1566&q=80"); */
+    background-image: url("../img/bgmain.jpg");
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+main {
+    color: white;
+    height: 100vh;
+    /* border: 3px solid red; */
+}
+
+a:hover{
+    text-decoration: none;
+    color:white;
+}
+nav {
+    font-family: "Roboto Condensed";
+    background-color: rgba(0, 0, 0, 0.7);
+    /* position:fixed; */
+    padding: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    /* border: 1px solid red; */
+}
+
+li a {
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 17px;
+}
+
+.underline {
+    text-decoration: none;
+    position: relative;
+}
+
+.underline:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+    bottom: -4px;
+    /****** 
+         optional values below 
+         ******/
+    /* center - (optional) use with adjusting width   */
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 50%;
+    /* optional animation */
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+/* optional hover classes used with anmiation */
+
+.underline:hover:after {
+    width: 100%;
+    background: #F5A201;
+}
+
+.container {
+    /* height: 500px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 3px solid purple; */
+}
+
+.container img {
+    margin-top: 40px;
+    width: 600px;
+    /* border: 1px solid blue; */
+}
+
+h1 {
+    color: #F5A201;
+    margin-top: 40px;
+    font-family: "Lobster", sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+main p {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 600px;
+    display: flex;
+    font-weight: 300;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.btn {
+    font-size: 1.1rem;
+    padding: 20px;
+    margin: 20px 30px;
+    color:white;
+    text-transform: uppercase;
+    width: 300px;
+    font-size: 20px;
+}
+
+.btn-outline-warning.cstm:hover {
+    background-color: #F5A201;
+    border-color: #F5A201;
+}
